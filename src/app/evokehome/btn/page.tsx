@@ -125,7 +125,7 @@ export default function page () {
                       Meet our team
                   </h3>
                   <p className="text-gray-600 mt-3">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy.
                   </p>
               </div>
               <div className="mt-12">
@@ -133,13 +133,7 @@ export default function page () {
                       {
                           team.map((item, idx) => (
                               <li key={idx} className="flex gap-4 items-center">
-                                  <div className="flex-none w-24 h-24">
-                                      <img
-                                          src={item.avatar}
-                                          className="w-full h-full rounded-full"
-                                          alt=""
-                                      />
-                                  </div>
+                               
                                   <div>
                                       <h4 className="text-gray-700 font-semibold sm:text-lg">{item.name}</h4>
                                       <p className="text-indigo-600">{item.title}</p>
