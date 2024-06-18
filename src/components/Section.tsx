@@ -26,7 +26,7 @@ export default function Section() {
   }, [theme]);
   return (
     <div
-      className="h-[300vh] bg-black w-full  rounded-md relative pt-40 overflow-clip"
+      className="md:h-[300vh] h-[260vh] bg-black w-full  rounded-md relative md:pt-40 pt-10 overflow-clip "
       ref={ref}
     >
          <Particles

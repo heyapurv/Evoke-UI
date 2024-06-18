@@ -51,7 +51,7 @@ export default function RootLayout({
             <div className="flex h-full max-h-screen flex-col gap-2">
               <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
                 <Link href="/" className="flex items-center gap-2 font-semibold">
-                  {/* <Package2 className="h-6 w-6" /> */}
+                  <Package2 className="h-6 w-6" />
                   <span className="">EVOKE UI</span>
                 </Link>
                 {/* <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
@@ -118,52 +118,32 @@ export default function RootLayout({
                 <SheetContent side="left" className="flex flex-col">
                   <nav className="grid gap-2 text-lg font-medium">
                     <Link
-                      href="/evokehome/btn"
+                      href="/"
                       className="flex items-center gap-2 text-lg font-semibold"
                     >
                       <Package2 className="h-6 w-6" />
-                      <span className="sr-only">Acme Inc</span>
+                      <span className="">Evoke UI</span>
                     </Link>
                     <Link
-                    href="/btn"
+                    href="/evokehome"
                       className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
                     >
                       <Home className="h-5 w-5" />
-                      Dashboard
+                      Get Started
                     </Link>
                     <Link
-                      href="/evokehome"
-                      className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"
-                    >
-                      <ShoppingCart className="h-5 w-5" />
-                      Orders
-                      <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                        6
-                      </Badge>
-                    </Link>
-                    <Link
-                      href="/evokehome/btn"
-                      className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                    >
-                      <Package className="h-5 w-5" />
-                      Products
-                    </Link>
-                    <Link
-                      href="/evokehome/btn"
-                      className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                    >
-                      <Users className="h-5 w-5" />
-                      Customers
-                    </Link>
-                    <Link
-                      href="/evokehome/btn"
-                      className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                    >
-                      <LineChart className="h-5 w-5" />
-                      Analytics
-                    </Link>
+                    href="/evokehome/btn"
+                    className="flex items-center gap-3 rounded-lg px-3 hover:bg-muted py-2 text-muted-foreground transition-all hover:text-primary"
+                  >
+                    <Inbox className="h-4 w-4" />
+                    Button
+                    <Badge className="ml-auto flex h-5 w-5 bg-transparent bg-black dark:bg-blue-400 shrink-0 items-center justify-center rounded-lg">
+                      1
+                    </Badge>
+                  </Link>
+                   
                   </nav>
-                  <div className="mt-auto">
+                  {/* <div className="mt-auto">
                     <Card>
                       <CardHeader>
                         <CardTitle>Upgrade to Pro</CardTitle>
@@ -178,7 +158,7 @@ export default function RootLayout({
                         </Button>
                       </CardContent>
                     </Card>
-                  </div>
+                  </div> */}
                 </SheetContent>
               </Sheet>
               <div className="w-full flex-1">
