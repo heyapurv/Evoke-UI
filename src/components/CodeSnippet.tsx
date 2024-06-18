@@ -27,7 +27,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ code }) => {
 
   return (
     <div>
-      <pre ref={codeRef} className="bg-gray-100 p-4 rounded-lg text-black dark:text-blue-600 dark:bg-black ">
+      <pre ref={codeRef} className="bg-gray-100 p-4 rounded-lg text-black dark:text-blue-600 dark:bg-black overflow-x-auto ">
         <code>{code}</code>
       </pre>
       <button
