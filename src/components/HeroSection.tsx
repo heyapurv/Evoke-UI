@@ -21,7 +21,10 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="md:h-[40rem] pt-20 w-full rounded-md flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased dard:bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="flex justify-end">
+      <span className="m-5"><ToggleBtn/></span>
+    </div>
+      <div className="md:h-[40rem] w-full rounded-md flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased dard:bg-grid-white/[0.02] relative overflow-hidden">
         <Particles
           className="absolute inset-0"
           quantity={100}
