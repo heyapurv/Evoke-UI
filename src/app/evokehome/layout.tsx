@@ -37,6 +37,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 
 import ToggleBtn from "./ToggleBtn";
+import SearchDialog from "@/components/SearchDialog";
 
 export default function RootLayout({
     children,
@@ -163,17 +164,14 @@ export default function RootLayout({
                 </SheetContent>
               </Sheet>
               <div className="w-full flex-1">
-                <form>
-                  <div className="relative">
-                    <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                    <Input
-                      type="search"
-                      placeholder="Search products..."
-                      className="w-full appearance-none bg-background pl-8 shadow-none md:w-2/3 lg:w-1/3"
-                    />
-                  </div>
-                </form>
-              </div>
+               
+                    <SearchDialog />
+              </div><Search className="text-gray-600 text-xs"/> <p className="text-sm text-muted-foreground">
+        Press{" "}
+        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[15px] font-medium text-muted-foreground opacity-100">
+          <span className="text-base">⌘</span>J
+        </kbd>
+      </p>
               <ToggleBtn/>
               {/* <DropdownMenu>
                 <DropdownMenuTrigger asChild>
